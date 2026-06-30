@@ -33,8 +33,3 @@ PYTHONIOENCODING=utf-8 PYTHONUTF8=1 <python程序或CLI>
 - 用 Bash 工具(Git Bash)调用比 PowerShell 更省心,但仍建议带上这两个变量。
 - 同类现象也出现在:中文路径、`print()` 中文、JSON 里的中文字段——UTF-8 模式一并解决。
 - 不只 Python:任何在 Windows 上输出非 ASCII 的 CLI 都要先想到「控制台代码页」这一层。
-
-## 关联 / Connections
-
-- 实战来源:[[boss-cli]] 在 Windows 上解析中文 JSON 信封时依赖此约定;见 [[boss-求职工作区]]。
-- 解析机器可读输出的更通用约定见 [[机器可读的-Agent-工具约定]]。
