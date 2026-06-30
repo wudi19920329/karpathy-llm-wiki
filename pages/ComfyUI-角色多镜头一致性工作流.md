@@ -51,7 +51,7 @@ related:
 **扩图节点链**:`Pad Image for Outpainting`(补边+遮罩,设 feathering)→ `VAE Encode for Inpainting`(`grow_mask_by` 官方默认 **6**,范围 0–64;扩大区域常调到 64 防接缝)→ KSampler(denoise 0.95–1.0)→ VAE Decode。
 - ⚠️ **原生 Flux 不擅长首轮扩图**,用 SDXL checkpoint,分辨率匹配 SDXL 尺寸。
 
-**裁剪精修**:"only masked" 重绘(denoise ~0.5)把蒙版区裁出来整张分辨率重画再缩回 = ComfyUI 的 **[[FaceDetailer]]** 或裁剪→放大→img2img。Upscale 与 FaceDetailer **必须固定 seed** 否则伤一致性。
+**裁剪精修**:"only masked" 重绘(denoise ~0.5)把蒙版区裁出来整张分辨率重画再缩回 = ComfyUI 的 **[[FaceDetailer]]** 或裁剪→放大→img2img。Upscale 与 FaceDetailer **必须固定 seed** 否则伤一致性。(FaceDetailer/Detailer 的采样参数怎么调 → [[Detailer-采样参数调优]];注意"裁剪整张重画"用 ~0.5,"SEGS 局部保身份"建议 0.3–0.45。)
 
 **现代工具 ComfyUI-Inpaint-CropAndStitch**(lquesada)两个方向通吃:`Inpaint Crop`(围绕蒙版裁+预缩放)/`Inpaint Stitch`(无损贴回)/`Extend Image for Outpainting`。推荐用 `InpaintModelConditioning` 替代 `VAE Encode (for Inpainting)` 以支持 denoise <1;用 `context_expand_factor`(如 2)给模型更多上下文。
 
@@ -102,6 +102,7 @@ related:
 
 - 把生成的多角度图沉淀成训练集 → [[角色LoRA数据集构建]]
 - "分割出 mask → 局部精修"主题枢纽 → [[ComfyUI-分割与精修]]
+- FaceDetailer / Detailer 采样参数怎么调 → [[Detailer-采样参数调优]]
 - 景别词怎么写 → [[Flux提示词-景别词排序规范]]
 - 待写:[[Flux-Kontext]] · [[Qwen-Image-Edit]] · [[IP-Adapter]] · [[ControlNet]] · [[FaceDetailer]] · [[PuLID]]
 

@@ -21,3 +21,7 @@ updated: 2026-06-30
 
 ## [2026-06-30] meta | 流程优化 — 把"逐一确认矛盾点→逐一开干"固化进 wiki-ingest 技能(步骤 2/3)与 CLAUDE.md(Ingest 步骤 2.5);存 feedback 记忆 ingest-confirm-conflicts-per-subtopic(起因:本次漏查 B/C/D 子主题被用户点名)
 
+## [2026-06-30] ingest | ComfyUI 搭工作流前查清单方案 — 原创综合(无外部信源):新建 [[ComfyUI-工作流前查清单方案]](synthesis),三类清单「谁最全」对比 + 搭工作流以 /object_info(get_node_info)为权威的固定流程;[[ComfyUI-分割与精修]] MOC 补反链;入 index 综合区。起因:用户要求该规则录 wiki 而非记忆文件
+
+
+## [2026-06-30] ingest | Detailer-采样参数调优 — 新建 Detailer(SEGS)/FaceDetailer/DetailerForEach 共用采样参数调参页(denoise 优先/cfg=1.0 认底模/guide_size);挂入 ComfyUI-分割与精修 MOC,与角色多镜头一致性页互链,denoise 0.5 vs 0.3-0.45 以语境 callout 调和;归档 raw/assets/detailer-segs-node-panel.png

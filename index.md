@@ -12,11 +12,13 @@ updated: 2026-06-30
 ## 综合 / Syntheses
 
 - [[ComfyUI-文本分割方案对比]] — SAM3 / HumanPartsUltra / GroundingDINO+SAM2 三方案选型对比（原创综合）
+- [[ComfyUI-工作流前查清单方案]] — 搭工作流前查清单:可用性看 `/object_info`(get_node_info)、磁盘文件看 `comfy model list`、插件看 cm-cli;以 ① 为权威写节点名（原创综合）
 - [[角色LoRA数据集构建]] — 角色 LoRA 数据集:景别配比(收集张数 vs repeat 权重)、数量、背景范式、单图扩充、打标铁律 + 矛盾澄清（综合 3 篇,归档 `sources/20260619/`）
 - [[扩散模型条件注入机制综述]] — U-Net→DiT、IP-Adapter decoupled cross-attention→in-context token、LoRA、注意力注入统一视角（综合,归档 `sources/20260619/`）
 
 ## 概念 / Concepts
 
+- [[Detailer-采样参数调优]] — Impact Pack Detailer (SEGS) / FaceDetailer / DetailerForEach 共用采样参数调参优先级:denoise 命门、cfg=1.0 认底模、guide_size 决定脸部清晰度（原创综合,归档 `raw/assets/detailer-segs-node-panel.png`）
 - [[Windows-Python-中文编码]] — Windows 跑输出中文的 Python CLI 时用 `PYTHONUTF8=1 PYTHONIOENCODING=utf-8` 修乱码 / `UnicodeEncodeError`(调用方修复，无需改源码）
 - [[Flux-LoRA-ai-toolkit训练实战]] — ai-toolkit 训 Flux.1-dev 角色 LoRA:24GB 基线配置、lr/alpha/步数/正则图来源分歧、触发词、防过拟合（归档 `sources/20260619/`）
 - [[ComfyUI-角色多镜头一致性工作流]] — 全身设定表优先→裁剪→FaceDetailer 精修→衍生镜头;扩图 vs 裁剪方向口诀;一致性三重锁（归档 `sources/20260619/`）

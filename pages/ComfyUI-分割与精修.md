@@ -22,6 +22,7 @@ ComfyUI 里"**检测 / 分割某区域 → 局部重绘精修**"这条主线的�
 
 ## 精修:用 mask 重绘
 
+- [[Detailer-采样参数调优]] — Detailer (SEGS) / FaceDetailer / DetailerForEach **共用采样参数**的调参优先级:`denoise` 命门、`cfg=1.0` 认底模、`guide_size` 决定脸部清晰度。
 - [[修头发-Detailer工作流]] — 待写:分割出 hair mask → `MaskToSEGS → DetailerForEach` 局部重绘。
 - [[FaceDetailer-面部手部精修]] — 待写:face / hand YOLO(bbox)+ SAM 精修,串行先脸后手。
 
@@ -34,6 +35,7 @@ ComfyUI 里"**检测 / 分割某区域 → 局部重绘精修**"这条主线的�
 ## 相关识别工具
 
 - [[底模识别-base-model-detector]] — 待写:读 safetensors 头识别底模 / 类型 / 精度。
+- [[ComfyUI-工作流前查清单方案]] — 搭工作流前先查清单:以 `/object_info`(`get_node_info`)为权威拿节点 / 模型枚举,辅以 `list_local_models` / `list_installed_nodes`。
 
 ## 待写 / TODO
 
