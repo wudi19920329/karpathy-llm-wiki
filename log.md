@@ -25,3 +25,6 @@ updated: 2026-06-30
 
 
 ## [2026-06-30] ingest | Detailer-采样参数调优 — 新建 Detailer(SEGS)/FaceDetailer/DetailerForEach 共用采样参数调参页(denoise 优先/cfg=1.0 认底模/guide_size);挂入 ComfyUI-分割与精修 MOC,与角色多镜头一致性页互链,denoise 0.5 vs 0.3-0.45 以语境 callout 调和;归档 raw/assets/detailer-segs-node-panel.png
+## [2026-06-30] ingest | 本机 Go 环境 — 探测 go version/env,扩档 sources/local-machine-env.md 加 Go 小节;[[本机开发环境]] 加 Go 表(go1.26.4/GOROOT/GOPATH/工具链)+ 两条 callout(CGO_ENABLED=0 且无 gcc→只能纯 Go 构建;GOPROXY 国际代理非 goproxy.cn)+ frontmatter tags 加 go + 开放问题加 cgo 工具链;index 摘要补 Go 1.26.4
+
+## [2026-06-30] ingest | F2 批量改名工具 — 探测本机 f2.exe 版本(go version -m → ayoisaiah/f2/v2 v2.2.2,纯 Go),归档 sources/f2-help-v2.2.2.md(verbatim --help 快照);新建 [[F2-批量改名工具]](type:reference):心智模型(默认 dry-run/-x 落盘/-u 撤销)、核心标志表、替换变量、整目录顺序编号实战配方({%03d}+--sort natural,本机已验证);[[本机开发环境]] Go 工具行补 [[F2-批量改名工具]] wikilink + related + Connections(印证纯 Go 工具在 CGO 关闭机上 go install 即用);入 index References 区。单源无矛盾。起因:用户用 f2 改 ComfyUI 输出图后要求录 wiki

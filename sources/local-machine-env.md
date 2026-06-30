@@ -68,3 +68,24 @@
 - nvm: 未安装
 - 路径: `C:\Program Files\nodejs\`
 - npm 全局 scripts: `C:\Users\admin\AppData\Roaming\npm`
+
+### Go
+
+> 收集时间: 2026-06-30(go version / go env / where go 命令行查询）
+
+- 版本: **go1.26.4 windows/amd64**
+- go 可执行: `C:\Program Files\Go\bin\go.exe`
+- GOROOT: `C:\Program Files\Go`
+- GOPATH: `C:\Users\admin\go`
+- GOBIN: 空（默认 = `GOPATH\bin`）
+- GOMODCACHE: `C:\Users\admin\go\pkg\mod`
+- GOCACHE: `C:\Users\admin\AppData\Local\go-build`
+- GOPROXY: `https://proxy.golang.org,direct`（默认国际代理，非国内镜像 goproxy.cn）
+- GOSUMDB: `sum.golang.org`
+- GOTOOLCHAIN: `auto`（go.mod 要求更高版本时自动下载）
+- GOOS/GOARCH: windows / amd64 · GOAMD64=v1
+- **CGO_ENABLED=0**（CGO 关闭）；CC=gcc、CXX=g++，但 `gcc: command not found`（本机未装 C 工具链）
+- GOTELEMETRY: local · GOENV: `C:\Users\admin\AppData\Roaming\go\env`
+- PATH 条目: `C:\Program Files\Go\bin`（GOROOT/bin）+ `C:\Users\admin\go\bin`（GOPATH/bin，均已暴露 → go install 的工具可直接运行）
+- GOPATH/bin 已装工具: `f2.exe`（ayoisaiah/f2 文件批量重命名 CLI）
+- 模块缓存已有: atomicgo.dev / github.com / go.withmatt.com / golang.org / gopkg.in
