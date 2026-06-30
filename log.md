@@ -17,3 +17,7 @@ updated: 2026-06-30
 
 ## [2026-06-30] ingest | 本机开发环境 — 归档 sources/local-machine-env.md;新建 [[本机开发环境]](type:reference);入 index 新分类 References;[[Windows-Python-中文编码]] 补反链消孤儿
 
+## [2026-06-30] ingest | AI 图像/视频 8 篇(sources/20260619/) — 新建 6 页:[[角色LoRA数据集构建]]、[[Flux-LoRA-ai-toolkit训练实战]]、[[ComfyUI-角色多镜头一致性工作流]]、[[Flux提示词-景别词排序规范]]、[[AI视觉生成基础手册]]、[[扩散模型条件注入机制综述]];矛盾逐一确认后落 callout(配比张数 vs repeat 权重、lr 1e-3、alpha=rank vs /2、步数、正则图、触发词首位 vs 孤立、全身优先 vs 特写优先、tag/自然语言按底模分流、CFG 5-9 vs Flux guidance);[[ComfyUI-分割与精修]] MOC 补"角色生成"段接入
+
+## [2026-06-30] meta | 流程优化 — 把"逐一确认矛盾点→逐一开干"固化进 wiki-ingest 技能(步骤 2/3)与 CLAUDE.md(Ingest 步骤 2.5);存 feedback 记忆 ingest-confirm-conflicts-per-subtopic(起因:本次漏查 B/C/D 子主题被用户点名)
+

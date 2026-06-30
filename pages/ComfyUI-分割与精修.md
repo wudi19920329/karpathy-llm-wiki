@@ -25,6 +25,12 @@ ComfyUI 里"**检测 / 分割某区域 → 局部重绘精修**"这条主线的�
 - [[修头发-Detailer工作流]] — 待写:分割出 hair mask → `MaskToSEGS → DetailerForEach` 局部重绘。
 - [[FaceDetailer-面部手部精修]] — 待写:face / hand YOLO(bbox)+ SAM 精修,串行先脸后手。
 
+## 应用场景:角色生成 / 训练
+
+- [[ComfyUI-角色多镜头一致性工作流]] — "全身设定表 → 裁剪 → FaceDetailer 精修脸 → 衍生镜头",精修是其中一环;含扩图 vs 裁剪的方向口诀。
+- [[角色LoRA数据集构建]] — 出图阶段用 FaceDetailer/ADetailer 修脸、inpainting 修手(而非数据集层死磕)。
+- [[Flux-LoRA-ai-toolkit训练实战]] — 把多角度图沉淀成 LoRA 的训练参数与调试。
+
 ## 相关识别工具
 
 - [[底模识别-base-model-detector]] — 待写:读 safetensors 头识别底模 / 类型 / 精度。
