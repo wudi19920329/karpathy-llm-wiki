@@ -1,5 +1,5 @@
 ---
-type: source
+type: summary
 aliases:
   - LLM Wiki
   - LLM Wiki 模式
@@ -30,7 +30,7 @@ related:
 
 ## 三层架构 + 三操作(机械层 → 见 [[CLAUDE]])
 
-- **三层**:`sources/`(只读真相源)/ `pages/`(LLM 全权拥有的 wiki 本体)/ schema(`CLAUDE.md`,把 LLM 从聊天机器人变成**有纪律的维护者**)。
+- **三层**:`sources/`(只读真相源)/ `wiki/`(LLM 全权拥有的 wiki 本体,按 type 分文件夹)/ schema(`CLAUDE.md`,把 LLM 从聊天机器人变成**有纪律的维护者**)。
 - **三操作**:**Ingest**(读源→和人过要点→写摘要页→更新 index→跨页补链→记 log,单源常触 10–15 页)/ **Query**(检索→带出处综合;**好答案回填成新页**,形态可为 md / 对比表 / Marp / matplotlib / canvas)/ **Lint**(查矛盾、过期、孤儿页、缺交叉引用、数据缺口)。
 - 本库对这三操作的具体落地、页面 frontmatter 约定、Skill 选择,全部写在 [[CLAUDE]],此处不复述(避免与 schema 重复)。
 

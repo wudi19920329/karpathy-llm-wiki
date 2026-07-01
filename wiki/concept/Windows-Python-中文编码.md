@@ -1,12 +1,22 @@
 ---
 type: concept
-aliases: [PYTHONUTF8, PYTHONIOENCODING, Windows终端中文乱码, Windows编码坑]
-tags: [windows, python, encoding, 踩坑, cli]
+aliases:
+  - PYTHONUTF8
+  - PYTHONIOENCODING
+  - Windows终端中文乱码
+  - Windows编码坑
+tags:
+  - windows
+  - python
+  - encoding
+  - 踩坑
+  - cli
 status: stable
 created: 2026-06-29
 updated: 2026-06-29
-source: "[[boss-求职工作区]]"
-related: ["[[机器可读的-Agent-工具约定]]"]
+source:
+related:
+  - "[[机器可读的-Agent-工具约定]]"
 ---
 
 # Windows · Python 中文编码坑

@@ -1,5 +1,5 @@
 ---
-type: concept
+type: concept        # summary 摘要 | entity 实体 | concept 概念 | comparison 对比 | overview 概览 | synthesis 综合 —— 存入 wiki/<type>/
 aliases: []
 tags: []
 status: stub

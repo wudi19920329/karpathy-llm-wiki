@@ -1,5 +1,5 @@
 ---
-type: synthesis
+type: comparison
 aliases: ["底图分割方案对比", "hair mask 方案对比", "ComfyUI 文本分割选型"]
 tags: [comfyui, segmentation, 对比, 分割, 精修]
 status: draft

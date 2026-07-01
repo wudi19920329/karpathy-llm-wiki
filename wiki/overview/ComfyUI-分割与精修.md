@@ -1,7 +1,7 @@
 ---
-type: moc
+type: overview
 aliases: ["ComfyUI 分割与精修", "ADetailer 主题", "局部精修主题"]
-tags: [comfyui, moc, 分割, 精修]
+tags: [comfyui, overview, 分割, 精修]
 status: draft
 created: 2026-06-30
 updated: 2026-06-30

@@ -13,8 +13,6 @@ updated: 2026-07-01
 
 ## [2026-06-30] ingest | SAM3 文本分割 — 归档 sources/comfyui-sam3-docs.md;新建 [[SAM3-文本分割]]、综合 [[ComfyUI-文本分割方案对比]]、MOC [[ComfyUI-分割与精修]];对比页内含 GroundingDINO+SAM2 在 transformers 5.x 的脆性反例(折叠)
 
-## [2026-06-30] lint | index + 全 5 页 — 修:补 [[Windows-Python-中文编码]] 入 index(原缺失,且填了空的 Concepts 占位);待用户定夺:该页孤儿(指向不存在的 boss-* 簇)、若干待写悬空链([[Memex]]/[[GroundingDINO]]/三个 Detailer/识别页)、SAM3 vs HumanPartsUltra 实测数据缺口
-
 ## [2026-06-30] ingest | 本机开发环境 — 归档 sources/local-machine-env.md;新建 [[本机开发环境]](type:reference);入 index 新分类 References;[[Windows-Python-中文编码]] 补反链消孤儿
 
 ## [2026-06-30] ingest | AI 图像/视频 8 篇(sources/20260619/) — 新建 6 页:[[角色LoRA数据集构建]]、[[Flux-LoRA-ai-toolkit训练实战]]、[[ComfyUI-角色多镜头一致性工作流]]、[[Flux提示词-景别词排序规范]]、[[AI视觉生成基础手册]]、[[扩散模型条件注入机制综述]];矛盾逐一确认后落 callout(配比张数 vs repeat 权重、lr 1e-3、alpha=rank vs /2、步数、正则图、触发词首位 vs 孤立、全身优先 vs 特写优先、tag/自然语言按底模分流、CFG 5-9 vs Flux guidance);[[ComfyUI-分割与精修]] MOC 补"角色生成"段接入
@@ -30,3 +28,5 @@ updated: 2026-07-01
 ## [2026-06-30] ingest | F2 批量改名工具 — 探测本机 f2.exe 版本(go version -m → ayoisaiah/f2/v2 v2.2.2,纯 Go),归档 sources/f2-help-v2.2.2.md(verbatim --help 快照);新建 [[F2-批量改名工具]](type:reference):心智模型(默认 dry-run/-x 落盘/-u 撤销)、核心标志表、替换变量、整目录顺序编号实战配方({%03d}+--sort natural,本机已验证);[[本机开发环境]] Go 工具行补 [[F2-批量改名工具]] wikilink + related + Connections(印证纯 Go 工具在 CGO 关闭机上 go install 即用);入 index References 区。单源无矛盾。起因:用户用 f2 改 ComfyUI 输出图后要求录 wiki
 
 ## [2026-07-01] ingest | 本机环境刷新(keep-current) — 重探本机;硬件+5 大运行时逐项与 2026-06-30 快照一致(无真矛盾,仅磁盘用量小幅陈旧已刷新)。用户拍板「不建新源、并成一节」:[[本机开发环境]] 新增「开发工具 / Dev tooling」段(git 2.54.0 / gh 2.95.0 / docker 29.5.3)+ 缺席工具链 note(rustc/cargo/gcc/clang/cmake 全缺→强化「仅纯 Go 可构建」);Python 段补 uv 托管解释器事实(仅 3.14.5,余为 download available;venv 为 per-project 无全局清单)答旧开放问题;CGO warning 扩 clang/cmake;frontmatter tags +git/docker、updated→07-01。sources/local-machine-env.md 保持 06-30 不动(git/gh/docker 未存档,页内注明补测来源)。index 摘要 + updated 同步
+
+## [2026-07-01] refactor | pages→wiki 按 type 分文件夹 + type 枚举对齐原文 6 类 — git mv 15 页入 `wiki/{summary,entity,concept,comparison,overview,synthesis}/`(folder 名 == frontmatter type);type 迁移 source→summary·moc→overview·reference→entity(本机开发环境/F2)·synthesis→comparison(仅文本分割方案对比);ComfyUI-分割与精修 tag moc→overview。CLAUDE.md/templates 双语枚举注释(summary 摘要|entity 实体|concept 概念|comparison 对比|overview 概览|synthesis 综合)+ 目录树/路径 pages→wiki;三技能与 sources/README 路径 pages→wiki(写页按 type 落文件夹)。index 重排为 6 分类(+对比/Comparisons,信源/Sources→摘要/Summaries,导航/MOC→概览/Overview,删参考/References 并入实体/Entities)、frontmatter type moc→overview。起因:逐字比对 sources/karpathy-llm-wiki.md,对齐原文「The wiki」层命名与六类页
