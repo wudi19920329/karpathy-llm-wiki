@@ -1,7 +1,7 @@
 ---
 type: moc
 title: Index
-updated: 2026-06-30
+updated: 2026-07-01
 ---
 
 # Index — 全部页面目录 🗂️
@@ -31,7 +31,7 @@ updated: 2026-06-30
 
 ## 参考 / References
 
-- [[本机开发环境]] — wudi 本机硬件与运行时快照（Ryzen 7 9700X · 64GB DDR5-6400 · RTX 5090 D v2 24GB · Python 3.14.5 · JDK 24 · Node v24 · Go 1.26.4，CGO 关闭+无 gcc）（归档 `sources/local-machine-env.md`）
+- [[本机开发环境]] — wudi 本机硬件与运行时快照（Ryzen 7 9700X · 64GB DDR5-6400 · RTX 5090 D v2 24GB · Python 3.14.5 · JDK 24 · Node v24 · Go 1.26.4 · git 2.54 / gh 2.95 / docker 29.5；无 C/Rust 工具链 → 仅纯 Go 可构建）（归档 `sources/local-machine-env.md`，git/gh/docker 段 2026-07-01 补测）
 - [[F2-批量改名工具]] — Go 写的跨平台批量重命名 CLI（ayoisaiah/f2 v2.2.2）：默认 dry-run、`-x` 落盘、`{%03d}` 自增序号、`--sort natural`、`-u` 撤销；含整目录顺序编号配方（归档 `sources/f2-help-v2.2.2.md`）
 
 ## 信源 / Sources
