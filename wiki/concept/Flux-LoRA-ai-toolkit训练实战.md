@@ -17,6 +17,7 @@ source:
 related:
   - "[[角色LoRA数据集构建]]"
   - "[[ComfyUI-角色多镜头一致性工作流]]"
+  - "[[LoRA打标]]"
 ---
 
 # Flux-LoRA ai-toolkit 训练实战
@@ -76,9 +77,11 @@ related:
 
 ## 打标策略 / Captioning
 
+> 打标的通用概念(定义、WD14/BLIP 方法对比、格式示例)见 [[LoRA打标]];本节是 ai-toolkit/Flux 训练实战中的具体权衡与触发词矛盾澄清。
+
 - **自然语言优先**(T5 友好);二次元可混 WD14 tag(会"自动多带一点动漫味",对二次元有益)。
 - mnemic 角色对照实验(Shadowheart,30 张)的关键权衡:
-  - **JoyCaption 长自然语言 + 无触发词 → likeness(相似度)最佳**;
+  - **[[JoyCaption]] 长自然语言 + 无触发词 → likeness(相似度)最佳**;
   - **无打标 + 仅触发词 → flexibility(灵活度)最佳**(换服装/动作灵活,但变性别能力弱)。
 - 铁律:**没描述的属性会被绑进触发词/角色**。想灵活就描述可变属性;想锁死造型就省略它们。
 

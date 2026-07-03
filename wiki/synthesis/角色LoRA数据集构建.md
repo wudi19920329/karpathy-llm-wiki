@@ -18,6 +18,7 @@ related:
   - "[[Flux-LoRA-ai-toolkit训练实战]]"
   - "[[ComfyUI-角色多镜头一致性工作流]]"
   - "[[扩散模型条件注入机制综述]]"
+  - "[[LoRA打标]]"
 ---
 
 # 角色 LoRA 数据集构建
@@ -77,11 +78,13 @@ related:
 
 ### 6. 打标铁律:Flux 用自然语言,"没描述的会被绑定"
 
+> 打标的通用概念(定义、WD14/BLIP 方法对比、格式示例)见 [[LoRA打标]];本节是 Flux 角色 LoRA 场景下的进阶铁律与矛盾澄清。
+
 - **Flux 偏好自然语言长 caption**(走 T5 编码器);SD1.5/SDXL 偏 booru tag(WD14)。进阶做法:**WD14 + 自然语言双标**,喂饱 CLIP-L 与 T5 两个编码器。
-- **黄金法则**:**标注你想可变的(服装/姿势/背景/表情/景别);省略你想锁进触发词的(脸型/瞳色/标志发型)**。"触发词 = 你没标注的那部分"。
+- **黄金法则**:**标注你想可变的(服装/姿势/背景/表情/景别);省略你想锁进触发词的(脸型/瞳色/标志发型)**。"触发词 = 你没标注的那部分"。把这条固化成硬约束的一个中文打标 agent(z-image 底模)见 [[z-image-agent打标工程师]]。
 - **按景别明确打标**("close-up portrait" / "full body standing"),让构图成为可控轴,而非与身份纠缠。
-- **触发词**:罕见乱码 token(`p3rs0n`、`sh4d0wh34rt`、`eksray`)+ 类别词(woman/man/character),放 caption **开头**——但 caption 整体仍须是自然语言句子(**"首位"≠"只有一个孤立触发词"**,详见 [[Flux-LoRA-ai-toolkit训练实战#触发词]] 的来源分歧);**不用角色真名**(防 base 模型同名知识漏入)。
-- 自动打标(JoyCaption / Florence-2 / WD14 / BLIP)**必须人工复核**——一张错标即可教坏 LoRA。
+- **触发词**:罕见乱码 token(`p3rs0n`、`sh4d0wh34rt`、`eksray`)+ 类别词(woman/man/character),放 caption **开头**——但 caption 整体仍须是自然语言句子(**"首位"≠"只有一个孤立触发词"**,详见 [[Flux-LoRA-ai-toolkit训练实战#触发词]] 的来源分歧);**不用角色真名**(防 base 模型同名知识漏入)。⚠️ 注意 [[z-image-agent打标工程师]] 那份 prompt 的**示例**用了真名 `diaochan`——那只是示例、触发词仍由用户定,别照抄真名,按本条用罕见 token。
+- 自动打标([[JoyCaption]] / Florence-2 / WD14 / BLIP)**必须人工复核**——一张错标即可教坏 LoRA。按场景选哪个工具(含 2026 新增的 Qwen3-VL、GPT-4o/Claude API)见 [[LoRA打标#工具选型建议按场景2026|LoRA打标 §工具选型建议]]。
 
 ### 7. 面部精修是命门,手部不在数据集层死磕
 
@@ -100,11 +103,13 @@ related:
 
 ## 关联 / Connections
 
+- 打标的通用概念(定义、WD14/BLIP 方法对比） → [[LoRA打标]]
 - 训练超参、ai-toolkit 配置、lr/alpha/steps/reg 的来源分歧 → [[Flux-LoRA-ai-toolkit训练实战]]
 - 在 ComfyUI 里"出设定表 → 裁剪 → 衍生镜头"的完整生产流 → [[ComfyUI-角色多镜头一致性工作流]]
 - Kontext/Qwen-Edit/IP-Adapter 背后的条件注入原理 → [[扩散模型条件注入机制综述]]
 - 景别/构图/打标词的影像学基础 → [[AI视觉生成基础手册]]
-- 待写:[[Flux-Kontext]] · [[Qwen-Image-Edit]] · [[IP-Adapter]] · [[FaceDetailer]] · [[JoyCaption]]
+- 打标工具 JoyCaption 详情(本地运行/无需 API key)→ [[JoyCaption]]
+- 待写:[[Flux-Kontext]] · [[Qwen-Image-Edit]] · [[IP-Adapter]] · [[FaceDetailer]]
 
 ## 来源 / Sources
 
