@@ -131,6 +131,7 @@ Flux 原生二次元知识偏弱、且偏写实。要得到干净 2D 观感:
 - 在 ComfyUI 里用训好的 LoRA 出多镜头 → [[ComfyUI-角色多镜头一致性工作流]]
 - LoRA 的低秩原理、与 DreamBooth/Textual Inversion 对比 → [[扩散模型条件注入机制综述#四、LoRA(Low-Rank Adaptation)]]
 - 本机显卡能否跑(RTX 5090 D 24GB)→ [[本机开发环境]]
+- ⚠️ **Web UI 新建 job 的默认值 ≠ 本页基线**(rank 32 / steps 3000 / 样图占位词 / keep×steps 删档陷阱)→ [[ai-toolkit-WebUI默认值陷阱]]
 
 ## 来源 / Sources
 

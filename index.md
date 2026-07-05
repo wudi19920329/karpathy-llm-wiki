@@ -25,6 +25,7 @@ updated: 2026-07-02
 - [[Detailer-采样参数调优]] — Impact Pack Detailer (SEGS) / FaceDetailer / DetailerForEach 共用采样参数调参优先级:denoise 命门、cfg=1.0 认底模、guide_size 决定脸部清晰度（原创综合,归档 `raw/assets/detailer-segs-node-panel.png`）
 - [[Windows-Python-中文编码]] — Windows 跑输出中文的 Python CLI 时用 `PYTHONUTF8=1 PYTHONIOENCODING=utf-8` 修乱码 / `UnicodeEncodeError`(调用方修复，无需改源码）
 - [[Flux-LoRA-ai-toolkit训练实战]] — ai-toolkit 训 Flux.1-dev 角色 LoRA:24GB 基线配置、lr/alpha/步数/正则图来源分歧、触发词、防过拟合（归档 `sources/20260619/`）
+- [[ai-toolkit-WebUI默认值陷阱]] — ai-toolkit Web UI 新建 job 默认值 ≠ 基线(rank 32 / steps 3000 / 样图占位词 / guidance 4 / cache·ema 关)的开跑前检查清单 + keep×steps 删档陷阱 + 改 job 的 API 备忘（原创综合,首次实证 m1r41 首训 2026-07-04）
 - [[ComfyUI-角色多镜头一致性工作流]] — 全身设定表优先→裁剪→FaceDetailer 精修→衍生镜头;扩图 vs 裁剪方向口诀;一致性三重锁（归档 `sources/20260619/`）
 - [[Flux提示词-景别词排序规范]] — 景别词紧贴主体放前段、不可堆叠;Flux 自然语言 vs SD tag 按底模分流（归档 `sources/20260619/`）
 - [[AI视觉生成基础手册]] — 文生图→图生视频全维度:容器/质感/引擎/时间层 + 2026 视频模型对比;时间一致性最难（归档 `sources/20260619/`）

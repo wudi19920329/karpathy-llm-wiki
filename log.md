@@ -1,4 +1,4 @@
-﻿---
+---
 type: log
 title: Log
 updated: 2026-07-02
@@ -54,3 +54,5 @@ updated: 2026-07-02
 ## [2026-07-02] ingest | Flux 版打标 agent(生成新源 + ingest) — 用户要求参考 z-image 版、按 FLUX 规范生成新 prompt 并建并列角色页。用 flux-best-practices 技能(core-principles/t2i-prompting/negative-prompt-alternatives)+ 库内 Flux 结论,生成 sources/agent角色/flux通用agent打标提示词.md(中文指令、英文 NL 输出);新建 [[flux-agent打标工程师]](concept)。相对 z-image 版按底模分流改造:纯英文自然语言 prose(非中文短 tag)、软结构 front-load(非固定字段序)、罕见 token 触发词(修 z-image 真名 E 分歧)、不加恒定画质样板(修 F 隐患)、显式禁负面词;黄金法则/身份特征硬禁相同。与库内 Flux 页全面对齐无冲突;Flux.1/2 与打标风格无关(共用 T5)已 callout。交叉更新 [[agent角色]] 枢纽(加 Flux 行)、[[z-image-agent打标工程师]](补姊妹链)、[[LoRA打标]](Flux 行补角色页链)、index 概念区。附带修正:文件夹 agent提示词→agent角色 改名导致的 6 处失效 source 路径(z-image 页 frontmatter / index×2 / overview×3 / log)一并订正
 
 ## [2026-07-03] query | Flux.1 LoRA 训练尺寸 — 用户问「flux1 lora训练尺寸」。检索命中 [[Flux-LoRA-ai-toolkit训练实战]](resolution [512,768,1024] 多分辨率自动分桶,24GB 基线)+ [[角色LoRA数据集构建]] §预处理(Flux/SDXL 素材按 1024、原图≥1024 不可放大、边 64 倍数或开 ARB 分桶)。两页已充分覆盖,直接检索作答,无需回填新页;附带提醒 Flux.1 vs Flux.2 参数不互通。
+
+## [2026-07-04] query | m1r41 LoRA ai-toolkit 参数体检 + 8 项优化落地 — 用户在 ai-toolkit Web UI 配好主角高桥未来 m1r41 的 Flux.1-dev 角色 LoRA job(未开跑),要对照 wiki 基线找需优化参数并直接改 job。经 REST API(GET/POST /api/jobs)读回 job_config 发现 UI 新建 job 默认值偏离 [[Flux-LoRA-ai-toolkit训练实战]] 基线,直接改 8 项并 API 回读校验全部生效:rank 32→16(用户拍板纯身份路线,画风交独立风格 LoRA)、steps 3000→2000、max_step_saves_to_keep 4→8(避免删掉 500–1000 步最佳档)、dataset.cache_latents_to_disk→true、use_ema→true、sample.samples 通用占位词→含 m1r41 的集内锚+集外场景泛化+换装(兼 S8 便服)3 条、guidance 4→3.5、sample 尺寸 1024²→832×1216。数据集发现记进项目 高桥未来第一次训练发现的问题-20260704.md(⚠️16 张全戴随身听违反角色卡「有/无两版」铁律→S8 靠 prompt/inpaint 摘、全白背景+单套装、打标纪律正确)。新建 concept 页 [[ai-toolkit-WebUI默认值陷阱]](UI 默认≠基线检查清单 + keep×steps 删档陷阱 + 改 job 的 API 备忘),交叉更新 [[Flux-LoRA-ai-toolkit训练实战]] 关联区加链,index 概念区登记。
