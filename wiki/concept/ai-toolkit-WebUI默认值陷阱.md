@@ -11,7 +11,7 @@ tags:
   - training
 status: stable
 created: 2026-07-04
-updated: 2026-07-04
+updated: 2026-07-05
 source:
 related:
   - "[[Flux-LoRA-ai-toolkit训练实战]]"
@@ -61,4 +61,7 @@ ai-toolkit **Web UI 新建 job 的默认值 ≠ [[Flux-LoRA-ai-toolkit训练实�
 ## 开放问题 / Open questions
 
 - ai-toolkit UI 版本升级后默认值是否变动，需再核（本页基于 2026-07 版）。
-- m1r41 首训最佳 checkpoint 落在第几步（训完回填，验证「500–1000 步」经验）。
+- ~~m1r41 首训最佳 checkpoint 落在第几步~~ → **已定档（2026-07-05，ComfyUI 固定种子双轴对比）：最佳 = step 1500**，
+  策略「校服@1.0 / 便服@0.8」、特写 1750@0.85。**注意与「500–1000 步」经验有偏差**：本例 rank-16 纯身份 LoRA + 16 张半写实立绘，
+  身份 ~500–750 就锁，但**可用相似度峰值（够像又未劣化）落在 1500**；强度 1.0 时随身听挂绳/蓝丝带发丝会 prop-bleed，
+  降 0.8 即净化。→ 经验修正：**「最佳档 500–1000」偏早，rank-16 半写实少样本可延到 ~1250–1500；务必 keep 全程 + 强度旋钮定场景**。
