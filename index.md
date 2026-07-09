@@ -1,7 +1,7 @@
 ---
 type: overview
 title: Index
-updated: 2026-07-02
+updated: 2026-07-07
 ---
 
 # Index — 全部页面目录 🗂️
@@ -19,6 +19,7 @@ updated: 2026-07-02
 - [[本机开发环境]] — wudi 本机硬件与运行时快照（Ryzen 7 9700X · 64GB DDR5-6400 · RTX 5090 D v2 24GB · Python 3.14.5 · JDK 24 · Node v24 · Go 1.26.4 · git 2.54 / gh 2.95 / docker 29.5 · Claude Code Pro 订阅（无 API key）；无 C/Rust 工具链 → 仅纯 Go 可构建）（归档 `sources/local-machine-env.md`，git/gh/docker 段 2026-07-01 补测、Claude Code 订阅段 2026-07-02 用户告知）
 - [[F2-批量改名工具]] — Go 写的跨平台批量重命名 CLI（ayoisaiah/f2 v2.2.2）：默认 dry-run、`-x` 落盘、`{%03d}` 自增序号、`--sort natural`、`-u` 撤销;含整目录顺序编号配方（归档 `sources/f2-help-v2.2.2.md`）
 - [[JoyCaption]] — 为训扩散模型而生的免费/开放/无审查打标 VLM（Beta One,bf16 ~17GB,24GB 可跑）;三种本地运行方式,vLLM 为本地自托管**无需 API key**;Descriptive/Booru 等多模式 + 可指令化打标（归档 `sources/joycaption-readme.md`）
+- [[对标账号-小白debug拆解]] — 抖音 AI 科普头部账号拆解:封面公式(看板娘+大字)、成片形态(MG动画+发光框录屏+硬字幕+TTS)、爆款题材与商单范式（截图 `raw/assets/xiaobai-debug-*.jpg`,2026-07-08 录屏分析）
 
 ## 概念 / Concepts
 
@@ -36,6 +37,7 @@ updated: 2026-07-02
 ## 对比 / Comparisons
 
 - [[ComfyUI-文本分割方案对比]] — SAM3 / HumanPartsUltra / GroundingDINO+SAM2 三方案选型对比（原创综合）
+- [[Qwen-Image-24G部署选型]] — Qwen-Image 20B 在 24G 显存/64G 内存的格式选型：bf16 不可行、Q6_K 全驻留甜点位默认、Q4_K_M 降级档、Q8 vs fp8 取舍（Blackwell fp8 硬件加速）、Lightning 蒸馏提速（原创综合，体积 2026-07-07 HF 核实）
 
 ## 概览 / Overview
 
@@ -48,6 +50,7 @@ updated: 2026-07-02
 - [[角色LoRA数据集构建]] — 角色 LoRA 数据集:景别配比(收集张数 vs repeat 权重)、数量、背景范式、单图扩充、打标铁律 + 矛盾澄清（综合 3 篇,归档 `sources/20260619/`）
 - [[扩散模型条件注入机制综述]] — U-Net→DiT、IP-Adapter decoupled cross-attention→in-context token、LoRA、注意力注入统一视角（综合,归档 `sources/20260619/`）
 - [[剧本到AI漫剧生产流水线]] — 剧本→动态漫端到端六阶段:角色圣经/分镜→圣杯图→数据集+打标→LoRA 训练→批量出镜→I2V 装配;串联库内六页的生产顺序视图（原创综合）
+- [[抖音科普视频生产流水线]] — 「MG动画+录屏」科普视频程序化生产:脚本为唯一数据源、逐句 TTS 免对齐出字幕轴、Remotion 数据驱动渲染、LoRA 看板娘+程序化叠字封面;与漫剧流水线互为姊妹篇（原创综合,draft 待 E001 验证）
 
 ## 其它入口 / Other entry points
 
