@@ -60,3 +60,5 @@ updated: 2026-07-02
 ## [2026-07-07] query | 本机开发环境（资讯流水线 Qwen-Image 选型语境） — 命中 [[本机开发环境]]：RTX 5090 D v2 24GB（Blackwell CC 12.0）修正了对话中按 3090/4090 假设的 fp8 硬件加速条件判断；64GB 内存证实 bf16 原版（权重 ~61.6GB）不可行。回填新页 [[Qwen-Image-24G部署选型]]（comparison：bf16/fp8/Q8/Q6_K/Q4_K_M/Lightning 选型，用户拍板推荐档从 Q4_K_M 改为 Q6_K 全驻留甜点位，体积 2026-07-07 自 HF 核实），交叉链入 [[本机开发环境]] 关联区，index 对比区登记。
 
 ## [2026-07-09] query | 本机开发环境(抖音科普账号方案语境) + 回填两页 — 用户要对标「小白debug」的抖音 AI 科普号实现方案。命中 [[本机开发环境]](5090D 24GB/Node v24/Claude Max 无 API key→LLM 环节走会话)、[[剧本到AI漫剧生产流水线]](看板娘 LoRA 资产链直接复用)。逐帧分析用户录屏(《保姆级Claude Code速学教程》4:19 段)得成片形态结论。回填 [[对标账号-小白debug拆解]](entity,stable,两帧截图入 raw/assets/)与 [[抖音科普视频生产流水线]](synthesis,draft,逐句TTS免对齐/Remotion数据驱动/封面叠字三个关键机制;待 E001 验证转 stable);index 实体/综合区各登记。项目实例落 D:\project\ai-vision\ai-technology-sharing(Remotion 引擎/SOP/选题库/TTS 脚本),不入 wiki。发现:GPT-SoVITS Blackwell 卡须用 -nvidia50 整合包,已记入综合页。
+
+## [2026-07-09] query | 动画库对比+抖音横竖屏 — 两源(sources/claude/ 剪藏,2026-07-09)有源无页,回填 [[动画库选型对比]](comparison,stable)+[[抖音横竖屏选择]](concept,stable);发现连接:小白debug横屏长视频=「深度知识讲解」例外分支非矛盾、Remotion 公司许可费补入 [[抖音科普视频生产流水线]] 开放问题(与 Flux.1-dev 非商用同属变现前合规项)并加关联链;index 对比/概念区各登记一页

@@ -1,7 +1,7 @@
 ---
 type: overview
 title: Index
-updated: 2026-07-07
+updated: 2026-07-09
 ---
 
 # Index — 全部页面目录 🗂️
@@ -33,11 +33,13 @@ updated: 2026-07-07
 - [[LoRA打标]] — LoRA 打标通用入门:黄金法则(标可变/不标想绑定)、WD14 vs BLIP/BLIP2、触发词基础 + 2026 按场景工具选型表(二次元/写实/NSFW/低显存/云端 API,新增 Qwen3-VL、Florence-2、GPT-4o/Claude）+ 打标风格按底模分语言(SD/Flux/z-image）（归档 `sources/claude/LoRA打标的概念与应用.md` + `raw/assets/lora-tagging-tool-selection-2026.png`）
 - [[z-image-agent打标工程师]] — 把打标黄金法则固化成硬约束的 LoRA 打标 agent prompt(z-image 底模:绑定/可变二分、中文结构化短语 + 固定字段顺序、触发词领头、结尾固定画质词);带 wiki 基线标注三处分歧(中文/真名触发词/固定画质词）（归档 `sources/agent角色/z-image-lora通用agent打标提示词.md`）
 - [[flux-agent打标工程师]] — z-image 版的按底模分流镜像:同一黄金法则,输出英文自然语言 prose、罕见 token 触发词领头、灯光必写、无负面词 / 无恒定画质样板(Flux/T5 底模）（归档 `sources/agent角色/flux通用agent打标提示词.md`）
+- [[抖音横竖屏选择]] — 抖音画幅选型:默认竖屏 9:16 保完播,深度知识/电脑端演示例外走横屏;工具分享用「竖屏背景+嵌横屏录屏」混合形式;含小白debug横屏=例外分支的库内印证（归档 `sources/claude/抖音横屏竖屏选择与内容适配.md`）
 
 ## 对比 / Comparisons
 
 - [[ComfyUI-文本分割方案对比]] — SAM3 / HumanPartsUltra / GroundingDINO+SAM2 三方案选型对比（原创综合）
 - [[Qwen-Image-24G部署选型]] — Qwen-Image 20B 在 24G 显存/64G 内存的格式选型：bf16 不可行、Q6_K 全驻留甜点位默认、Q4_K_M 降级档、Q8 vs fp8 取舍（Blackwell fp8 硬件加速）、Lightning 蒸馏提速（原创综合，体积 2026-07-07 HF 核实）
+- [[动画库选型对比]] — 动画库按场景分流:程序化生成视频→Remotion、代码讲解→Motion Canvas、数学→Manim、网页交互→GSAP/Framer Motion、设计师动效→AE+Lottie、3D→Blender/Three.js;Remotion 公司使用付许可费（归档 `sources/claude/anim动画库对比.md`）
 
 ## 概览 / Overview
 
