@@ -1,7 +1,7 @@
 ---
 type: overview
 title: Index
-updated: 2026-07-09
+updated: 2026-07-17
 ---
 
 # Index — 全部页面目录 🗂️
@@ -53,6 +53,8 @@ updated: 2026-07-09
 - [[扩散模型条件注入机制综述]] — U-Net→DiT、IP-Adapter decoupled cross-attention→in-context token、LoRA、注意力注入统一视角（综合,归档 `sources/20260619/`）
 - [[剧本到AI漫剧生产流水线]] — 剧本→动态漫端到端六阶段:角色圣经/分镜→圣杯图→数据集+打标→LoRA 训练→批量出镜→I2V 装配;串联库内六页的生产顺序视图（原创综合）
 - [[抖音科普视频生产流水线]] — 「MG动画+录屏」科普视频程序化生产:脚本为唯一数据源、逐句 TTS 免对齐出字幕轴、Remotion 数据驱动渲染、LoRA 看板娘+程序化叠字封面;与漫剧流水线互为姊妹篇（原创综合,draft 待 E001 验证）
+- [[Agent编排模式谱系]] — 多 agent 编排六模式(中心派发/handoffs/图状态机/角色流水线/文件黑板/事件驱动)×上下文传递(保真度谱/五通道/KV-cache·compaction·recitation 经济学),含「先问要不要多 agent」前提与跨项目选型指南（原创综合,2026-07-17 定向核查校准,引用 Anthropic/Cognition/Manus/OpenAI/LangChain 一手源）
+- [[内容线Agent编排评估]] — 内容线编排体系(主会话派发+全稿传递+文件落盘+三层改动权+人工门)的双判据评估:谱系坐标×自家复盘实证逐项对账,三层改动权撞正 Cognition 2026 single-writer+advisory 收敛;页尾挂复盘后再议候选（原创综合,基准日 2026-07-17,n=1 置信度注记,非约束）
 
 ## 其它入口 / Other entry points
 

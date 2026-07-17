@@ -62,3 +62,5 @@ updated: 2026-07-02
 ## [2026-07-09] query | 本机开发环境(抖音科普账号方案语境) + 回填两页 — 用户要对标「小白debug」的抖音 AI 科普号实现方案。命中 [[本机开发环境]](5090D 24GB/Node v24/Claude Max 无 API key→LLM 环节走会话)、[[剧本到AI漫剧生产流水线]](看板娘 LoRA 资产链直接复用)。逐帧分析用户录屏(《保姆级Claude Code速学教程》4:19 段)得成片形态结论。回填 [[对标账号-小白debug拆解]](entity,stable,两帧截图入 raw/assets/)与 [[抖音科普视频生产流水线]](synthesis,draft,逐句TTS免对齐/Remotion数据驱动/封面叠字三个关键机制;待 E001 验证转 stable);index 实体/综合区各登记。项目实例落 D:\project\ai-vision\ai-technology-sharing(Remotion 引擎/SOP/选题库/TTS 脚本),不入 wiki。发现:GPT-SoVITS Blackwell 卡须用 -nvidia50 整合包,已记入综合页。
 
 ## [2026-07-09] query | 动画库对比+抖音横竖屏 — 两源(sources/claude/ 剪藏,2026-07-09)有源无页,回填 [[动画库选型对比]](comparison,stable)+[[抖音横竖屏选择]](concept,stable);发现连接:小白debug横屏长视频=「深度知识讲解」例外分支非矛盾、Remotion 公司许可费补入 [[抖音科普视频生产流水线]] 开放问题(与 Flux.1-dev 非商用同属变现前合规项)并加关联链;index 对比/概念区各登记一页
+
+## [2026-07-17] query+回填 | [[Agent编排模式谱系]] + [[内容线Agent编排评估]] — 起因:ai-news 仓 grilling 定案(模式粒度/双判据/拆两页/候选非约束)。定向核查 Anthropic 多agent系统·Cognition Don't-Build-Multi-Agents(含 2026 single-writer+advisory 收敛)·Manus 上下文工程·OpenAI handoffs·LangGraph 后落两页(均 synthesis,stable);关键发现:内容线三层改动权与 Cognition 2026 收敛结论同构且固化不晚于业界。content-factory docs/orchestration.md 挂指针指向评估页;index 综合区登记两页
